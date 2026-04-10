@@ -1,0 +1,30 @@
+Marnie é uma
+aldeã, que mora na Vila
+Pelicanos, dona do
+famoso Rancho da
+Marnie. Ela não é lá
+muito famosa por ter
+regularidade com seus
+horários de atendimento
+e nunca está presente as
+segundas e terças-feiras.
+A clientela está
+sempre ávida por feno
+para alimentar seus animais durante o inverno e por isso, ela precisa
+implementar uma forma de manter controle sobre seu estoque de feno.
+Visto que a Marnie só pode vender uma quantidade de feno de modo que a
+quantidade restante no estoque seja par, ajude-a com as vendas.
+Entrada
+A entrada contêm dois inteiros ‘N’ (1 <= N <= 103
+) e ‘Q’ (1 <= ‘Q’
+<= 106
+), representando, respectivamente, a quantidade de feno que
+determinado aldeão quer comprar e a quantidade de feno disponível para
+compra.
+Saída
+Você deverá imprimir se é possível vender o feno imprimindo
+“vendido” ou em caso contrário, imprimindo “sinto muito”.
+Entrada Saída
+8 12 vendido
+5 11 vendido
+2 3 sinto muito
