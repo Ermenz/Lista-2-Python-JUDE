@@ -1,4 +1,4 @@
-Recém chegado em Hogwarts, Harry está lidando com muitos desafios. O
+iRecém chegado em Hogwarts, Harry está lidando com muitos desafios. O
 mais recente dentre eles é a sua aula de poções, em que ele não sabe se foi bem
 ou não. Para descobrir, Harry precisará reunir as notas dele e fazer um cálculo para
 obter a média.
@@ -22,3 +22,19 @@ Parabens bruxao, eh nois que voa, voce passou!
 3.7
 5.0
 Voce nao passou, tente usar a varinha na proxima vez!
+
+
+
+
+
+n1 = float(input())
+n2 = float(input())
+n3 = float(input())
+n4 = float(input())
+
+media = (n1 + n2 + n3 + n4) / 4
+
+if media >= 5.0:
+    print("Parabens bruxao, eh nois que voa, voce passou!")
+else:
+    print("Voce nao passou, tente usar a varinha na proxima vez!")
