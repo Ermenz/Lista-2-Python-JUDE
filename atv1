@@ -1,0 +1,24 @@
+Recém chegado em Hogwarts, Harry está lidando com muitos desafios. O
+mais recente dentre eles é a sua aula de poções, em que ele não sabe se foi bem
+ou não. Para descobrir, Harry precisará reunir as notas dele e fazer um cálculo para
+obter a média.
+Entrada
+Seu programa deverá receber quatro números reais, em linhas diferentes, n1,
+n2, n3 e n4, respectivamente representando a nota em quatro provas. Saiba que as
+notas são números entre 0.0 e 10.0.
+Saída
+Seu programa deverá ser capaz de imprimir a frase “Parabens bruxao, eh
+nois que voa, voce passou!”, sem as aspas, caso a nota seja maior ou igual a 5.0,
+e a frase “Voce nao passou, tente usar a varinha na proxima vez!”, sem as
+aspas, caso a nota seja inferior a 5.0.
+Entrada Saída
+5.7
+4.4
+8.5
+6.9
+Parabens bruxao, eh nois que voa, voce passou!
+4.3
+5.1
+3.7
+5.0
+Voce nao passou, tente usar a varinha na proxima vez!
