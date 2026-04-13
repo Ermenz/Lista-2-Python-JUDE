@@ -1,0 +1,16 @@
+ataque = input()
+defesa = input()
+
+vitorias = {
+    "água": ["besta", "fogo"],
+    "besta": ["planta", "solo"],
+    "fogo": ["besta", "planta"],
+    "planta": ["água", "solo"],
+    "raio": ["água", "besta", "planta"],
+    "solo": ["água", "fogo", "raio"]
+}
+
+if defesa in vitorias.get(ataque, []):
+    print("hit!")
+else:
+    print("countered!")
