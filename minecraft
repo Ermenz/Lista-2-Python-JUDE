@@ -1,0 +1,13 @@
+entrada = input().split()
+C = int(entrada[0])
+c = int(entrada[1])
+X = int(entrada[2])
+
+if C % c == 0:
+    necessarios = (C // c) ** 3
+    if X >= necessarios:
+        print("Eh possivel")
+    else:
+        print("!Eh possivel")
+else:
+    print("!Eh possivel")
