@@ -1,0 +1,12 @@
+entrada = input().split()
+X = int(entrada[0])
+Y = int(entrada[1])
+
+if Y * 9 >= X:
+    print("Lar doce lar.")
+else:
+    total_necessario = (X + 8) // 9
+    faltam = total_necessario - Y
+    
+    print("Precisa de mais difusores!")
+    print(faltam)
