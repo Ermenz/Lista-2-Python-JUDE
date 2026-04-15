@@ -1,0 +1,9 @@
+X, Y = map(int, input().split())
+
+
+if (0 < X < 71) and (0 < Y < 71):
+  print("Coordenada valida e o navio esta perto")
+elif (100 > X > 70) or (100 > Y > 70):
+  print("Coordenada valida e o navio esta longe")
+elif  (X >= 100) or (0 > Y >= 100) or (X <= 0) or (Y <= 0):
+  print("Coordenada invalida")
