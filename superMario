@@ -1,0 +1,10 @@
+SC, MM, CK = map(int, input().split())
+
+TotalSC = 30
+TotalMM = 6
+TOTALCK = 3
+
+if SC == 30:
+    print("PROXIMO MUNDO")
+else:
+    print(TOTALSC-SC,TOTALMM-MM,TOTALCK-CK)  
