@@ -1,0 +1,14 @@
+z, g = map(str, input().split())
+d, c = map(str, input().split())
+
+if z == d and g == c:
+    print("Driblado")
+    print("Gol")
+elif z != d and g == c:
+    print("Bloqueado")
+elif z == d and g != c: 
+    print("Driblado")
+    print("...e o goleiro pega")
+elif z != d and g != c:
+    print("Bloqueado")
+    
