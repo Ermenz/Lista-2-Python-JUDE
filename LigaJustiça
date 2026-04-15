@@ -1,0 +1,13 @@
+A, B = map(int, input().split())
+C, D = map(int, input().split())
+
+AreaT = (A * B)/2
+AreaR =  C * D
+AreaTE = AreaR - AreaT 
+
+if((AreaT < AreaR) and (A < C) and (B < D) and (A < D) and (B < C)):
+    print("Ao infinito e alem.")
+    print(f"{AreaT:.1f} {AreaR:.1f} {AreaTE:.1f}")
+elif((AreaT >= AreaR) or (A >= C) or (B >= D) or (A >= D) or (B >= C)):    
+    print("Vamos treinar na caverna do Superman.")
+    print(f"{AreaT:.1f} {AreaR:.1f} {AreaR :.1f}")
