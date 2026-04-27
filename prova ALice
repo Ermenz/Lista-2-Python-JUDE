@@ -1,0 +1,17 @@
+A, B = map(float, input().split())
+
+
+sT = A - int(A) 
+sTr = B - int(B)
+
+
+A -= sT
+B -= sTr
+
+
+if (sTr>sT):
+    sT += 0.60
+    A -= 1
+
+r = (A-B) + (sT-sTr)
+print(f"{r:.2f}")
