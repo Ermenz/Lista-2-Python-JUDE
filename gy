@@ -1,0 +1,33 @@
+# Lê a quantidade de tipos de cédulas configuradas na máquina
+X = int(input())
+
+# Preenche a lista com os valores das cédulas
+cedulas_maquina = []
+for i in range(X):
+    nota = int(input())
+    cedulas_maquina.append(nota)
+   
+# Lê a quantidade de euros já impressos
+Y = int(input())  
+
+# Calcula o valor restante em reais (usando a taxa implícita de 6 do exemplo)
+faltam_reais = 4000000000 - (Y * 6)
+print(f"faltam: {faltam_reais}")
+
+# Define e filtra as cédulas aceitáveis (50, 100 e 200)
+aceitaveis = [50, 100, 200]
+notas_validas = [n for n in cedulas_maquina if n in aceitaveis]
+
+# Se restou valor a pagar e a máquina possui notas aceitáveis
+if len(notas_validas) > 0 and faltam_reais > 0:
+    # Converte o valor faltante de volta para euros (usando a taxa de 5 do enunciado)
+    faltam_euros = faltam_reais // 5
+    
+    # Divide a quantia igualmente entre as notas aceitáveis disponíveis
+    euros_por_nota = faltam_euros // len(notas_validas)
+
+    # Calcula e exibe a quantidade exata de cada nota necessária
+    for nota in notas_validas:
+        qtd_notas = euros_por_nota // nota
+        if qtd_notas > 0:
+            print(f"notas de {nota}: {qtd_notas}")
