@@ -1,0 +1,23 @@
+X = int(input())
+
+cedulas_maquina = []
+for i in range(X):
+    nota = int(input())
+    cedulas_maquina.append(nota)
+   
+Y = int(input())  
+
+faltam_reais = 4000000000 - (Y * 6)
+print(f"faltam: {faltam_reais}")
+
+aceitaveis = [50, 100, 200]
+notas_validas = [n for n in cedulas_maquina if n in aceitaveis]
+
+if len(notas_validas) > 0 and faltam_reais > 0:
+    faltam_euros = faltam_reais // 5
+    euros_por_nota = faltam_euros // len(notas_validas)
+
+    for nota in notas_validas:
+        qtd_notas = euros_por_nota // nota
+        if qtd_notas > 0:
+            print(f"notas de {nota}: {qtd_notas}")
