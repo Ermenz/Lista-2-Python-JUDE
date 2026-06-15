@@ -1,0 +1,59 @@
+def verifica_linha(matriz, linha):
+    elementos = matriz[linha]
+    return sorted(elementos) == list(range(1, 10))
+
+
+def verifica_coluna(matriz, coluna):
+    elementos = []
+    for i in range(9):
+        elementos.append(matriz[i][coluna])
+    return sorted(elementos) == list(range(1, 10))
+
+
+def verifica_bloco(matriz, linha_inicio, coluna_inicio):
+    elementos = []
+    for i in range(3):
+        for j in range(3):
+            elementos.append(matriz[linha_inicio + i][coluna_inicio + j])
+    return sorted(elementos) == list(range(1, 10))
+
+
+def verifica_sudoku(matriz):
+    # Verifica linhas
+    for i in range(9):
+        if not verifica_linha(matriz, i):
+            return False
+
+    # Verifica colunas
+    for j in range(9):
+        if not verifica_coluna(matriz, j):
+            return False
+
+    # Verifica blocos 3x3
+    for i in range(0, 9, 3):
+        for j in range(0, 9, 3):
+            if not verifica_bloco(matriz, i, j):
+                return False
+
+    return True
+
+
+# =========================
+# PROGRAMA PRINCIPAL
+# =========================
+
+matriz = []
+
+for i in range(9):
+    linha = input().strip()
+    
+    lista_linha = []
+    for j in range(9):
+        lista_linha.append(int(linha[j]))
+    
+    matriz.append(lista_linha)
+
+if verifica_sudoku(matriz):
+    print("configuração válida")
+else:
+    print("configuração inválida")
